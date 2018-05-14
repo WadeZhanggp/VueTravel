@@ -3,11 +3,12 @@
     <div class="title">周末去哪儿</div>
     <ul>
       <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
-        <img class="item-img" :src='item.imgUrl'/>
+        <div class="item-img-wrapper">
+          <img class="item-img" :src='item.imgUrl'/>
+        </div>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
-          <button class="item-button">查看详情</button>
         </div>
       </li>
     </ul>
@@ -21,19 +22,19 @@ export default {
     return {
       recommendList: [{
         id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201408/14/771e7f0a85ca13b12c3fde0f7739440f.jpg_200x200_5e08c104.jpg',
+        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/4e/3e87ee62e59cdb.jpg_r_640x214_fe6cc902.jpg',
         title: '杭州海洋世界',
         desc: '领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美'
       },
       {
         id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201408/14/771e7f0a85ca13b12c3fde0f7739440f.jpg_200x200_5e08c104.jpg',
+        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/4e/3e87ee62e59cdb.jpg_r_640x214_fe6cc902.jpg',
         title: '杭州海洋世界',
         desc: '领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美'
       },
       {
         id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201408/14/771e7f0a85ca13b12c3fde0f7739440f.jpg_200x200_5e08c104.jpg',
+        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/4e/3e87ee62e59cdb.jpg_r_640x214_fe6cc902.jpg',
         title: '杭州海洋世界',
         desc: '领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美'
       }]
@@ -49,31 +50,18 @@ export default {
     line-height: .8rem
     background: #eee
     text-indent: .2rem
-  .item
+  .item-img-wrapper
     overflow: hidden
-    display: flex
-    height: 1.9rem
+    height: 0
+    padding-bottom: 33.9%
     .item-img
-      width: 1.7rem
-      height: 1.7rem
-      padding: .1rem
-    .item-info
-      flex: 1
-      padding: .1rem
-      min-width: 0
-      .item-title
-        line-height: .54rem
-        font-size: .32rem
-        ellipsis()
-      .item-desc
-        line-height: .4rem
-        color: #ccc
-        ellipsis()
-      .item-button
-        line-height: .44rem
-        margin-top: .2rem
-        background: #ff9300
-        padding: 0 .2rem
-        border-radius: .06rem
-        color: #fff
+      width: 100%
+  .item-title
+    line-height: .54rem
+    font-size: .32rem
+    ellipsis()
+  .item-desc
+    line-height: .4rem
+    color: #ccc
+    ellipsis()
 </style>
