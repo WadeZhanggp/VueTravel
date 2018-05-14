@@ -10,9 +10,13 @@ import 'styles/iconfont.css'
 import fastClick from 'fastclick'
 import 'swiper/dist/css/swiper.css'
 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper)
+Vue.use(ElementUI)
 
 /* eslint-disable no-new */
 new Vue({
