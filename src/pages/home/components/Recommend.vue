@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src='item.imgUrl'/>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,27 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201408/14/771e7f0a85ca13b12c3fde0f7739440f.jpg_200x200_5e08c104.jpg',
-        title: '杭州海洋世界',
-        desc: '领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美'
-      },
-      {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201408/14/771e7f0a85ca13b12c3fde0f7739440f.jpg_200x200_5e08c104.jpg',
-        title: '杭州海洋世界',
-        desc: '领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美'
-      },
-      {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201408/14/771e7f0a85ca13b12c3fde0f7739440f.jpg_200x200_5e08c104.jpg',
-        title: '杭州海洋世界',
-        desc: '领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美,领略海洋的美'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
