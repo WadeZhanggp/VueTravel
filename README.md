@@ -12,7 +12,7 @@ node >= 6.0.0
 npm >= 3.0.0
 
 ### 2、windows node及npm环境安装
-  #### windows下的NodeJS安装是比较方便的（v0.6.0版本之后，支持windows native），只需要登陆官网（http://nodejs.org/），便可以看到首页的“INSTALL”按钮，直接点击就会自动下载安装了
+  #### windows下的NodeJS安装是比较方便的（v0.6.0版本之后，支持windows native），只需要登陆官网 http://nodejs.org 便可以看到首页的“INSTALL”按钮，直接点击就会自动下载安装了
   #### 安装过程基本直接“NEXT”就可以了。（windows的安装msi文件在过程中会直接添加path的系统变量，变量值是你的安装路径，例如“C:\Program Files\nodejs”）。
   #### 安装完成后可以使用cmd（win+r然后输入cmd进入）测试下是否安装成功。方法：在cmd下输入node -v，出现版本提示就是完成了NodeJS的安装。
   #### npm的安装。由于新版的NodeJS已经集成了npm，所以之前npm也一并安装好了。同样可以使用cmd命令行输入"npm -v"来测试是否成功安装，出现版本提示便OK了。
