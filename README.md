@@ -3,7 +3,7 @@
 ## Vue全家桶介绍：
 ### “简单却不失优雅，小巧而不乏大匠”。
 #### Vue.js 是一个JavaScriptMVVM库，是一套构建用户界面的渐进式框架。它是以数据驱动和组件化的思想构建的，采用自底向上增量开发的设计。相比于Angular.js，Vue.js提供了更加简洁、更易于理解的API，使得我们能够快速地上手并使用Vue.js；同时比起 React + Redux 相对复杂的架构，Vue.js 更加轻量级也更加容易上手，是初创项目的首选前端框架。Vue 的核心库只关注视图层，它不仅易于上手，还便于与第三方库或既有项目整合。并且作者是华人的关系，Vue拥有着对华人开发者最友好的api文档和官方教程。
-#### Vue有著名的全家桶系列，包含了vue-router http://router.vuejs.org ，vuex http://vuex.vuejs.org， vue-resource https://github.com/pagekit/vue-resource。再加上构建工具vue-cli，就是一个完整的vue项目的核心构成。
+#### Vue有著名的全家桶系列，包含了vue-router http://router.vuejs.org ，vuex http://vuex.vuejs.org， vue-resource https://github.com/pagekit/vue-resource 。再加上构建工具vue-cli，就是一个完整的vue项目的核心构成。
 #### 1、vue-router路由：通过import导入并定义Vue模块、vue-router模块和需要使用的组件
 #### 2、vuex状态管理：Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
 #### 3、vue-resource介绍：Vue-resource有体积小，支持IE9以上的浏览器，支持promise特性的特点。同样推荐使用npm来安装Vue-resource。在安装并引入vue-resource后，可以基于全局的Vue对象使用http，也可以基于某个Vue实例使用http。（该git项目没有使用vue-resource，使用axios做网络请求）
