@@ -2,15 +2,32 @@
 
 ## Vue全家桶介绍：
 ### “简单却不失优雅，小巧而不乏大匠”。
-![](mdImg/1.png)
+#### Vue.js 是一个JavaScriptMVVM库，是一套构建用户界面的渐进式框架。它是以数据驱动和组件化的思想构建的，采用自底向上增量开发的设计。相比于Angular.js，Vue.js提供了更加简洁、更易于理解的API，使得我们能够快速地上手并使用Vue.js；同时比起 React + Redux 相对复杂的架构，Vue.js 更加轻量级也更加容易上手，是初创项目的首选前端框架。Vue 的核心库只关注视图层，它不仅易于上手，还便于与第三方库或既有项目整合。并且作者是华人的关系，Vue拥有着对华人开发者最友好的api文档和官方教程。
+#### Vue有著名的全家桶系列，包含了vue-router（http://router.vuejs.org），vuex（http://vuex.vuejs.org）， vue-resource（https://github.com/pagekit/vue-resource）。再加上构建工具vue-cli，就是一个完整的vue项目的核心构成。
+#### 1、vue-router路由：通过import导入并定义Vue模块、vue-router模块和需要使用的组件
+#### 2、vuex状态管理：Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
+#### 3、vue-resource介绍：Vue-resource有体积小，支持IE9以上的浏览器，支持promise特性的特点。同样推荐使用npm来安装Vue-resource。在安装并引入vue-resource后，可以基于全局的Vue对象使用http，也可以基于某个Vue实例使用http。（该git项目没有使用vue-resource，使用axios做网络请求）
+
+### 调试插件
+#### 在vue调试方面，可以选择安装chrome插件vue Devtools。打开vue项目，在console控制台选择vue面板。在Devtools工具中，可以选择组件，查看对应组件内的数据信息。也可以选择Vuex选项，查看该项目内Vuex的状态变量信息。
+
+![](mdImg/devtool.png)
+
+### Vue上推荐的UI库
+#### 1、Element
+![](mdImg/element.png)
+#### 2、iView
+![](mdImg/ivew.png)
+
+#### 参考链接 https://blog.csdn.net/zhenghao35791/article/details/67639415
+#### http://baijiahao.baidu.com/s?id=1564621978525392&wfr=spider&for=pc
 
 ## 项目描述：
 ### 1、项目基于Vue2.5.2
-### 2、主要组件有axios0.18.0、vue-router3.0.1、webpack3.6.0
+### 2、主要组件有axios0.18.0、vue-router3.0.1、webpack3.6.0、vuex3.0.1
 ### 3、该项目适用于手机web页面，一个webApp，参考去哪儿网
 ### 4、网络接口为本地static文件夹下mock下的.json文件
 
-**********************
 ## 环境安装：
 ### 1、环境要求
 #### node >= 6.0.0 && npm >= 3.0.0
@@ -29,6 +46,21 @@
 
 ### 3、MacOS node及npm环境安装
 #### 自行搜索
+
+## 项目结构及学习笔记：
+![](mdImg/project1.png) ![](mdImg/project2.png)
+### 1、config文件夹
+### 2、dist文件夹
+### 3、nodel_modules文件夹
+### 4、src文件夹
+### 5、router文件夹
+### 6、store文件夹
+### 7、static文件夹
+### 8、.gitignore文件
+### 9、package.json文件
+### 10、README.md文件
+### 11、
+
 
 ## 项目运行：
 ### 1、项目下载
