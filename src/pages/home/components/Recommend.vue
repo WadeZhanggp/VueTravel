@@ -4,7 +4,7 @@
     <ul>
       <router-link
         tag="li"
-        :to="'/detail' + item.id"
+        :to="'/detail/' + item.id"
         class="item border-bottom"
         v-for="item of list"
         :key="item.id"
